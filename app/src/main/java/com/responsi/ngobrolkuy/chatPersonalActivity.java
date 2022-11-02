@@ -7,19 +7,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class LupapasswordActivity extends AppCompatActivity {
-    private TextView submit;
+public class chatPersonalActivity extends AppCompatActivity {
+
+    private TextView kembali;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lupapassword);
-        getSupportActionBar().hide();
-        submit = findViewById(R.id.submit);
+        setContentView(R.layout.activity_chat_personal);
 
-        submit.setOnClickListener(new View.OnClickListener() {
+        kembali = findViewById(R.id.kembali2);
+        getSupportActionBar().hide();
+        kembali.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent pindah = new Intent(LupapasswordActivity.this, ChatActivity.class);
+                Intent pindah = new Intent(chatPersonalActivity.this, ChatActivity.class);
                 startActivity(pindah);
             }
         });

@@ -38,6 +38,14 @@ public class ProfilePicActivity extends AppCompatActivity {
         avatar = findViewById(R.id.profilePic);
         lanjut = findViewById(R.id.lanjut);
 
+        lanjut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent pindah = new Intent(ProfilePicActivity.this, ChatActivity.class);
+                startActivity(pindah);
+            }
+        });
+
         tambahfoto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

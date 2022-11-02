@@ -5,8 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_drawable"
-    tools:context=".RoomChatActivity">
+    tools:context=".ChatActivity">
 
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
     <LinearLayout
         android:id="@+id/ngobrolKuyTitle"
         android:layout_width="match_parent"
@@ -38,6 +47,7 @@
             android:textColor="@color/pink"/>
 
         <ImageView
+
             android:layout_marginStart="140dp"
             android:id="@+id/dots"
             android:layout_width="40dp"
@@ -51,6 +61,7 @@
 
 
     <RelativeLayout
+
         android:layout_marginTop="20dp"
         android:id="@+id/RoomChat1"
         android:layout_width="match_parent"
@@ -62,32 +73,33 @@
             android:id="@+id/img1"
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:src="@drawable/man"
             android:layout_marginLeft="15dp"
-            android:layout_marginTop="10dp">
-        </de.hdodenhof.circleimageview.CircleImageView>
+            android:layout_marginTop="10dp"
+            android:src="@drawable/man"></de.hdodenhof.circleimageview.CircleImageView>
+
         <TextView
             android:id="@+id/nama1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ozora"
-            android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
             android:layout_toRightOf="@id/img1"
-            android:textSize="10pt"
+            android:text="Ozora"
             android:textColor="@color/white"
+            android:textSize="10pt"
             android:textStyle="bold"
             tools:ignore="InvalidId" />
+
         <TextView
             android:id="@+id/chat1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="p balap"
+            android:layout_below="@id/nama1"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@id/img1"
-            android:layout_below="@id/nama1"
-            android:textSize="7pt"
+            android:text="futsal kuy"
             android:textColor="@color/white"
+            android:textSize="7pt"
             tools:ignore="InvalidId" />
     </RelativeLayout>
 
@@ -102,15 +114,16 @@
             android:id="@+id/img2"
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:src="@drawable/racheltjhia"
             android:layout_marginLeft="15dp"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="10dp"
+            android:src="@drawable/haile">
+
         </de.hdodenhof.circleimageview.CircleImageView>
         <TextView
             android:id="@+id/nama2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Rachel Tjhia"
+            android:text="Hailee Standfield"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@id/img2"
@@ -118,16 +131,17 @@
             android:textColor="@color/white"
             android:textStyle="bold"
             tools:ignore="InvalidId" />
+
         <TextView
             android:id="@+id/chat2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="iyaaaa"
+            android:layout_below="@id/nama2"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@id/img2"
-            android:layout_below="@id/nama2"
-            android:textSize="7pt"
+            android:text="nanti aku kabarin"
             android:textColor="@color/white"
+            android:textSize="7pt"
             tools:ignore="InvalidId" />
     </RelativeLayout>
 
@@ -146,32 +160,297 @@
             android:layout_marginLeft="15dp"
             android:layout_marginTop="10dp">
         </de.hdodenhof.circleimageview.CircleImageView>
+
         <TextView
             android:id="@+id/nama3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Moona Hoshinova"
-            android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
             android:layout_toRightOf="@id/img3"
-            android:textSize="10pt"
+            android:text="Zeroarmor Crew"
             android:textColor="@color/white"
+            android:textSize="10pt"
             android:textStyle="bold"
             tools:ignore="InvalidId" />
+
         <TextView
             android:id="@+id/chat3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="aku punya kostum baru lohh"
+            android:layout_below="@id/nama3"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@id/img3"
-            android:layout_below="@id/nama3"
-            android:textSize="7pt"
+            android:text="aku punya kostum baru lohh"
             android:textColor="@color/white"
+            android:textSize="7pt"
             tools:ignore="InvalidId" />
     </RelativeLayout>
 
+    <RelativeLayout
+        android:id="@+id/RoomChat4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/RoomChat3">
 
 
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/cewe">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/chat4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nama4"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img4"
+            android:text="besok saya sekolah"
+            android:textColor="@color/white"
+            android:textSize="7pt"
+            tools:ignore="InvalidId" />
+
+        <TextView
+            android:id="@+id/nama4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/img4"
+            android:text="Shania"
+            android:textColor="@color/white"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            tools:ignore="InvalidId" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RoomChat5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/RoomChat4">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img5"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/programmer">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/chat5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nama5"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img5"
+            android:text="Saya bisa membantu anda besok"
+            android:textColor="@color/white"
+            android:textSize="7pt"
+            tools:ignore="InvalidId" />
+
+        <TextView
+            android:id="@+id/nama5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/img5"
+            android:text="Jack Lockly"
+            android:textColor="@color/white"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            tools:ignore="InvalidId" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RoomChat6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/RoomChat5">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img6"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/men">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/chat6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aku punya penawaran baru"
+            android:textColor="@color/white"
+            android:textSize="7pt"
+            tools:ignore="InvalidId"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img6"
+            android:layout_below="@id/nama6" />
+
+        <TextView
+            android:id="@+id/nama6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/img6"
+            android:text="Pak Saeb"
+            android:textColor="@color/white"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            tools:ignore="InvalidId" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RoomChat7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/RoomChat6">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img7"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/men">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/chat7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nanti malam kita pesta"
+            android:textColor="@color/white"
+            android:textSize="7pt"
+            tools:ignore="InvalidId"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img7"
+            android:layout_below="@id/nama7" />
+
+        <TextView
+            android:id="@+id/nama7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/img7"
+            android:text="Haji Sholeh"
+            android:textColor="@color/white"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            tools:ignore="InvalidId" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RoomChat8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/RoomChat7">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img8"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/men">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/chat8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nama8"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img8"
+            android:text="info loker bg"
+            android:textColor="@color/white"
+            android:textSize="7pt"
+            tools:ignore="InvalidId" />
+
+        <TextView
+            android:id="@+id/nama8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/img8"
+            android:text="Pak Zalfikar"
+            android:textColor="@color/white"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            tools:ignore="InvalidId" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RoomChat9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/RoomChat8">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img9"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/men">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/chat9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nama9"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img9"
+            android:text="info loker bg"
+            android:textColor="@color/white"
+            android:textSize="7pt"
+            tools:ignore="InvalidId" />
+
+        <TextView
+            android:id="@+id/nama9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/img9"
+            android:text="Pak Zalfikar"
+            android:textColor="@color/white"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            tools:ignore="InvalidId" />
+    </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

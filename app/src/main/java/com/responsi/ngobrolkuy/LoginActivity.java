@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class LoginActivity extends AppCompatActivity {
     private TextView btnlogin;
-    private TextView btnlupapassword;
+
     private TextView btnregist;
 
     @Override
@@ -18,7 +18,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         btnlogin = findViewById(R.id.login);
-        btnlupapassword = findViewById(R.id.lupapassword);
+
         btnregist = findViewById(R.id.register);
         getSupportActionBar().hide();
 
@@ -38,13 +38,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        btnlupapassword.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent pindah = new Intent(LoginActivity.this, LupapasswordActivity.class);
-                startActivity(pindah);
-            }
-        });
+
 
     }
 }
